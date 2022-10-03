@@ -1,0 +1,93 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navBar {
+    height: 20vh;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar img {
+    width: 8%;
+}
+
+.navBar .nav {
+    width: 65%;
+}
+
+.navBar .nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 40px;
+    font-family: 'Futura PT';
+    list-style: none;
+}
+
+.navBar .nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav a {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.nav a span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.nav a span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -50px;
+    transition: 0.5s;
+}
+
+.nav a:hover span {
+    padding-right: 35px;
+}
+
+.nav a:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.header {
+    height: 80vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/agence.png');
+    background-position-y: -250px;
+}
+
+.texte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+}
+
+.texte h1 {
+    font-size: 70px;
+    font-family: 'Futura PT';
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
